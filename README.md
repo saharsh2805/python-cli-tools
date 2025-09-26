@@ -6,25 +6,40 @@ A collection of command-line interface (CLI) tools built in Python as part of th
 
 ## 1. To-Do List Application (`todo.py`)
 
-A fully functional, persistent CLI to-do list application.
+A fully functional, persistent CLI to-do list application that saves tasks to a `tasks.json` file.
 
 ### Features
-
-* **Add Tasks**: Add new tasks to your list.
-* **View Tasks**: See a numbered list of all tasks and their completion status.
-* **Mark as Complete**: Mark any task as "Complete".
-* **Remove Tasks**: Delete tasks from the list.
-* **Persistence**: Your to-do list is automatically saved to a `tasks.json` file and reloaded every time you start the app.
+* Add, view, remove, and mark tasks as complete.
+* Data is saved and loaded automatically between sessions.
 
 ### How to Use
+```bash
+python todo.py
 
-1.  Navigate to the project directory in your terminal.
-2.  Run the application with the command:
-    ```bash
-    python todo.py
-    ```
-3.  Follow the on-screen menu to manage your tasks.
+---
+## 2. File Organizer (`file_organizer.py`)
+
+A utility script that organizes files in a specified directory by moving them into subfolders based on their file extension.
+
+### Features
+* Handles multiple file types.
+* Automatically creates destination folders if they don't exist.
+
+### How to Use
+```bash
+python file_organizer.py
 
 ---
 
-*More tools will be added to this repository soon.*
+## 3. URL Shortener (`url_shortener.py`)
+
+A simple API wrapper that uses the TinyURL service to shorten long web addresses.
+
+### Features
+* Accepts a long URL from the user.
+* Intelligently adds `https://` if the protocol is missing.
+* Returns a shortened URL from the TinyURL API.
+
+### How to Use
+```bash
+python url_shortener.py
